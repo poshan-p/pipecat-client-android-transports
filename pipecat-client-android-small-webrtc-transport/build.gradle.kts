@@ -75,7 +75,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "ai.pipecat"
             artifactId = "small-webrtc-transport"
-            version = "0.3.5"
+            version = "0.3.6"
 
             pom {
                 name.set("Small WebRTC Transport")

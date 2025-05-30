@@ -48,6 +48,9 @@ jobs:
       - name: Generate Maven repo for OpenAI transport
         run: ./gradlew :pipecat-client-android-openai-realtime-webrtc:publishAllPublicationsToPipecatLocalRepoRepository
 
+      - name: Generate Maven repo for Small WebRTC transport
+        run: ./gradlew :pipecat-client-android-small-webrtc-transport:publishAllPublicationsToPipecatLocalRepoRepository
+
       - name: Upload Maven repo
         uses: actions/upload-artifact@v4
         with:
